@@ -1,92 +1,51 @@
-// sass中的注释，不会出现在编译后的css中
-/* css中的注释，会出现在编译后的css中 */
-
-// 变量
-$width:600px;
-$color:blue;
-$num:10*50px;//500%
-
-// 混合器（宏）
-@mixin repeat {
-  box-sizing: border-box;
-  font-size: 14px;
-  margin: 0;
-}
-@mixin wh($w,$h){
-  width: $w;
-  height: $h;
+// 公用版心
+.area {
+    width: 1140px;
+    // background-color: red;
 }
 
-body{
-  $height:300px;
-  h1{
-    text-align: center;
-    background-color: #eee;
-    color: $color;
-    padding: 10px;
-    @include repeat;
-    @if 5 > 3 { border: 2px dotted; }
-  }
-  img{
-    // width: $num;
-    // height: $height;
-    @include repeat;
-    @include wh(400px,200px);
-    @extend h1;
-  }
+#wd {
+    width: 100%;
+    // height: 40px;
+    // background-color: rosybrown;
 }
 
-// 嵌套语法
-.box{
-  width: 400px;
-  // height: $height; // 报错 访问不到
-  background-color: #eee;
-  .content{
-    border: 1px solid red;
-    p{
-      font-size: 16px;
-      color: blue;
-      // 继承h3的样式
-      @extend h3;
-    }
-  }
-  h3{
-    color: orange;
-    font-size: 20px;
-    @include repeat;
-    @include wh(600px,50px);
-  }
-  // 父选择器标识符&
-  &-main{
-    background:lightblue;
-  }
-  .show{
-    background-color: lightcoral;
-  }
-  a{
-    color: #333;
-    // 继承.show的样式
-    @extend .show;
-    &:hover{
-      color: red;
-    }
-  }
+// header头部
+#header {
+    width: 100%;
+    background-color: #333333;
 }
 
-// 导入外部样式(样式复用，模块化)
-@import './header.scss';
-
-// @for $i from 1 through 3 {
-//   .item-#{$i} { width: 2em * $i; }
-// }
-@for $i from 1 to 4 {
-  .item-#{$i} { width: 2em * $i; }
+.header {
+    margin: 0 auto;
+    height: 40px;
+    background-color: red;
 }
-// .item-1 {
-//   width: 2em; }
 
-// .item-2 {
-//   width: 4em; }
+// 导航
+.navigation {
+    margin: 0 auto;
+    height: 50px;
+    background-color: rgb(35, 192, 21);
+}
 
-// .item-3 {
-//   width: 6em; }
+//banner轮播图
+.banner {
+    margin: 0 auto;
+    height: 500px;
+    background-color: rgb(56, 224, 224);
+}
+
+// row广告
+.row {
+    margin: 20px auto 20px;
+    height: 180px;
+    background-color: rgb(39, 66, 219);
+}
+
+// 明星产品star
+.star {
+    margin: 40px auto 20px;
+    height: 400px;
+    background-color: rgb(198, 26, 221);
+}
