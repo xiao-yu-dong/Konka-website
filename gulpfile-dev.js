@@ -44,6 +44,12 @@ task('image', async() => {
         .pipe(load.connect.reload())
 })
 
+task('font', async() => {
+    src('./font/*.*')
+        .pipe(dest('./dist/font'))
+        .pipe(load.connect.reload())
+})
+
 // 启动一个服务，实现自动刷新
 task('reload', async() => {
     load.connect.server({
@@ -61,7 +67,7 @@ task('watch', async() => {
 })
 
 // 打包（开发环境）
-task('dev', series('delDist', 'html', 'sass', 'script', 'image'))
+task('dev', series('delDist', 'html', 'sass', 'script', 'image', 'font'))
 
 // 启动项目
 task('start', series('dev', 'reload', 'watch'))

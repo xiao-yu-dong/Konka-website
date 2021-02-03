@@ -1,0 +1,94 @@
+#banner {
+    // margin: 40px auto;
+    width: 100%;
+    height: 500px;
+    // background-color: #ff6700;
+    position: relative;
+}
+
+.item {
+    display: none;
+    list-style: none;
+}
+
+.item img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lr-tab .btn {
+    position: absolute;
+    width: 41px;
+    height: 50px;
+    top: 195px;
+}
+
+.lr-tab .left {
+    left: 60px;
+    background-position-x: -83px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    color: black;
+    font-size: 20px;
+    background-color: rgba(119, 119, 119, 0.5);
+}
+
+.lr-tab .left:hover {
+    background-position-x: 0;
+    cursor: pointer;
+}
+
+.lr-tab .right {
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 40px;
+    color: black;
+    background-color: rgba(119, 119, 119, 0.5);
+    right: 60px;
+    background-position: -125px 0;
+}
+
+.lr-tab .right:hover {
+    background-position-x: -41px;
+    cursor: pointer;
+}
+
+.tab-btn {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    right: 600px;
+    bottom: 15px;
+}
+
+.bottom-btn {
+    list-style: none;
+    width: 130px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    float: left;
+    margin: 5px;
+    // -webkit-border-radius: 50%;
+    // -moz-border-radius: 50%;
+    // border-radius: 50%;
+    transition: all .3s;
+}
+
+.bottom-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+}
