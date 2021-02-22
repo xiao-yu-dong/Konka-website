@@ -29,6 +29,11 @@ task('sass', async() => {
         .pipe(dest('./rev/css')) //将记录哈希值的json文件保存rev目录
 })
 
+// 编译json
+task('data', async() => {
+    src('./data/*.json')
+        .pipe(dest('./dist/data'))
+})
 
 // 处理js
 task('script', async() => {
@@ -71,4 +76,4 @@ task('font', async() => {
 })
 
 // 打包（生成环境）
-task('build', series('delDist', 'sass', 'script', 'image', 'html', 'font'))
+task('build', series('delDist', 'sass', 'script', 'image', 'html', 'font', 'data'))

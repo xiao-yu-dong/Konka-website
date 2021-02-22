@@ -15,17 +15,12 @@ task('html', async() => {
         .pipe(load.connect.reload())
 })
 
-// 处理css
-/* task('style',async ()=>{
-  src('./style/*.css')
-  .pipe(dest('./dist/style'))
-  .pipe(load.connect.reload())
-}) */
+
 
 // 编译sass
 task('sass', async() => {
     src('./style/*.scss')
-        .pipe(load.sassChina().on('error', load.sassChina.logError)) //编译scss
+        .pipe(load.sassChina().on('error', load.sassChina.logError)) //编译sass
         .pipe(dest('./dist/style'))
         .pipe(load.connect.reload())
 })
@@ -34,6 +29,13 @@ task('sass', async() => {
 task('script', async() => {
     src('./script/*.js')
         .pipe(dest('./dist/script'))
+        .pipe(load.connect.reload())
+})
+
+// 处理json
+task('data', async() => {
+    src('./data/*.*')
+        .pipe(dest('./dist/data'))
         .pipe(load.connect.reload())
 })
 
@@ -67,7 +69,7 @@ task('watch', async() => {
 })
 
 // 打包（开发环境）
-task('dev', series('delDist', 'html', 'sass', 'script', 'image', 'font'))
+task('dev', series('delDist', 'html', 'sass', 'script', 'image', 'font', 'data'))
 
 // 启动项目
 task('start', series('dev', 'reload', 'watch'))

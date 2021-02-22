@@ -1,0 +1,1184 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <title>我的购物车</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <link href="./image/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+    <script src="./script/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./script/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./script/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="./style/theme.css">
+    <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/carterer.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <ul class="site-advertising">
+    </ul>
+    <div class="site-header-relative">
+        <div class="site-topbar">
+            <div class="site-topbar-container">
+                <div class="topbar-nav">
+                    <a href="news.html" title="康佳新闻" rel="nofollow" target="_blank">康佳新闻</a>
+                    <span class="sep">|</span>
+                    <a href="https://campus.konka.com/wt/konka/web/index/CompkonkaPageindex" title="加入康佳" rel="nofollow" target="_blank">加入康佳</a>
+                    <span class="sep">|</span>
+                    <a href="https://campus.konka.com/wt/konka/web/index/CompkonkaPageschoolRecruitmentHome" title="校园招聘" rel="nofollow" target="_blank">校园招聘</a>
+                    <span class="sep">|</span>
+                    <a href="http://bbs.konka.com/" title="康佳社区" rel="nofollow" target="_blank">康佳社区</a>
+                    <span class="sep">|</span>
+                    <a href="prucahse.html" title="大宗采购" rel="nofollow" target="_blank">大宗采购</a>
+                    <span class="sep">|</span>
+                    <a href="integralmall.html" title="积分商城" rel="nofollow" target="_blank">积分商城</a>
+                    <span class="sep">|</span>
+                </div>
+                <div class="topbar-cart">
+                    <a href="/cart.html" class="iconImg">
+                        <!-- <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
+                        <img class="top-header-cart" src="./image/picture/top-header-cart.png"> 购物车(
+                        <span class="cart-num">0</span>)
+                        <span class="sp-num" style="display:none"></span>
+                    </a>
+                </div>
+                <div class="topbar-info">
+                    <span class="spanLine"></span>
+                    <a href="javascript:;" class="member-btn" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: none"></a>
+                    <a href="/passport-login.html" class=" signin-btn" style="display: none;">登录</a>
+                    <span class=" sep ">|</span>
+                    <a href="/passport-signup.html" class=" signup-btn" style="display: none;">注册</a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="/my.html">个人中心</a></li>
+                        <li><a href="/my-orders.html">我的订单</a></li>
+                        <li><a href="/passport-logout.html">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="site-header" id="nav-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2 logoImg">
+                        <a href="/index.html"><img src="./image/picture/logo.png"></a>
+                    </div>
+                    <div class="col-xs-1"><a href="/index.html">首页</a></div>
+                    <div class="col-xs-1"><a href="/list.html?cat_id=82">电视</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1032.html" title="">
+                                                <img src="./image/picture/da8514538de5a9fa1d25e3462b27c529d69a3d90.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">阿斐亚A3</h4>
+                                        <div class="figure-title ellipsis">洞见未来 / 帧享视界</div>
+                                        <p>￥11999.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-887.html" title="">
+                                                <img src="./image/picture/1c1e139c81eefa60064ee592140a763509c58874.png">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">98吋4K智能AI</h4>
+                                        <div class="figure-title ellipsis">帝王黑金属机身</div>
+                                        <p>￥99999.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-942.html" title="">
+                                                <img src="./image/picture/9e0295d5462fc1044675abace24fc9208eaf8165.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">43吋全面屏AI</h4>
+                                        <div class="figure-title ellipsis">人工智能 / 4KHDR²</div>
+                                        <p>￥1399.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/LED55D8.html" title="">
+                                                <img src="./image/picture/336184b21789797e2e69867d56dabfd42042c6f7.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">55吋远场免遥控</h4>
+                                        <div class="figure-title ellipsis">声控家电 / 全面屏</div>
+                                        <p>￥2299.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/65G10U-2.html" title="">
+                                                <img src="./image/picture/62d95bbc0c478409845dc93cec7adfeecb16d31b.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">65吋4K超薄AI声控全面屏 </h4>
+                                        <div class="figure-title ellipsis">3G内存 / 全景AI</div>
+                                        <p>￥3899.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1236.html" title="">
+                                                <img src="./image/picture/65e9d6b36c7b449a3a89bc5915ab8079ee11110a.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">75吋远场语音</h4>
+                                        <div class="figure-title ellipsis">AI智能 / 纤薄机身</div>
+                                        <p>￥3699.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-1"><a href="/list.html?cat_id=28">冰箱</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1099.html" title="">
+                                                <img src="./image/picture/ce76de5f244ef98568ab778ff537fdf6a4f27779.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">155升双门</h4>
+                                        <div class="figure-title ellipsis">小冰箱/保鲜静音</div>
+                                        <p>￥749.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1120.html" title="">
+                                                <img src="./image/picture/ccbe838e13c50dac570e3aa7d557e7b9d3618358.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">288升多门</h4>
+                                        <div class="figure-title ellipsis">三温区 / 自动化霜</div>
+                                        <p>￥1499.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/BCD-300EGX4SU.html" title="">
+                                                <img src="./image/picture/8e5f4259fa65c2ba54b8f6ce3e5738ebcf1d1c96.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">300升多门节能</h4>
+                                        <div class="figure-title ellipsis">电脑温控 / 净味保鲜</div>
+                                        <p>￥1569.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/BCD-400EGX5S.html" title="">
+                                                <img src="./image/picture/ec49cd90db55323911e3e093490b654e18767a54.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">400升对开门</h4>
+                                        <div class="figure-title ellipsis">电脑温控 / 超薄机身</div>
+                                        <p>￥1669.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/BCD-450WEGX4SP.html" title="">
+                                                <img src="./image/picture/b85646fae2c3a687d77a5d9d33186af4a23df044.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">450升十字对开门</h4>
+                                        <div class="figure-title ellipsis">一级能效 / 风冷无霜</div>
+                                        <p>￥2599.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/BCD-BCD-460WGVS8DM.html" title="">
+                                                <img src="./image/picture/e03ec3ccff72521a254f9e1073e87e5d9435a790.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">460升十字对开门</h4>
+                                        <div class="figure-title ellipsis">变频除菌 / 多能保鲜</div>
+                                        <p>￥4899.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-1"><a href="/list.html?cat_id=29">洗衣机</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/XQB30-618H.html" title="">
+                                                <img src="./image/picture/584c4fad0ec5f0b01573abb5c5edfda137f473f6.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">3公斤全自动波轮</h4>
+                                        <div class="figure-title ellipsis">高温煮洗 / 纳米抑菌</div>
+                                        <p>￥899.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1268.html" title="">
+                                                <img src="./image/picture/20910d2ef102e69b61245b858ead22da51690fbd.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">5公斤全自动波轮</h4>
+                                        <div class="figure-title ellipsis">一键清洗 / 智能加水</div>
+                                        <p>￥599.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/XQB62-M5101.html" title="">
+                                                <img src="./image/picture/2b9d2d80b978ee661f9bae824c6303ed9bea82b3.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">6.2公斤波轮自洁</h4>
+                                        <div class="figure-title ellipsis">净力超群 / 一键自洁</div>
+                                        <p>￥699.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/XQG80-10D08W.html" title="">
+                                                <img src="./image/picture/1a71e2da8ee155125e5f31fcf86b7368ad90e5ab.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">8公斤滚筒快洗</h4>
+                                        <div class="figure-title ellipsis">高温煮洗 / 中途加衣</div>
+                                        <p>￥1199.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/XQG90-BB12D08W.html" title="">
+                                                <img src="./image/picture/470501028c900502b5719825ccbac74073f33eaf.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">9公斤变频滚筒</h4>
+                                        <div class="figure-title ellipsis">变频节能 / 高温煮洗</div>
+                                        <p>￥1699.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/XQG120-1201J.html" title="">
+                                                <img src="./image/picture/a9b97aedd711a376f999572c5b9786c29ad8219a.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">12公斤变频滚筒</h4>
+                                        <div class="figure-title ellipsis">超大容量 / 智能童锁</div>
+                                        <p>￥2999.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-1"><a href="/list.html?cat_id=13">生活电器</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1271.html" title="">
+                                                <img src="./image/picture/9ce5e146a55aa17bbb5b9e4954a253f5fe0b3efc.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">复古意式咖啡机</h4>
+                                        <div class="figure-title ellipsis">三合一体/深压萃取/强劲蒸汽</div>
+                                        <p>￥799.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1117.html" title="">
+                                                <img src="./image/picture/e3e9fb22ce5a921701a888ae6abeacc00cd401a2.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">32升多功能烤箱</h4>
+                                        <div class="figure-title ellipsis">烘焙用具 / 大容量</div>
+                                        <p>￥189.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1127.html" title="">
+                                                <img src="./image/picture/631724a41f712086fd441705a2f3bf5503a0a951.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">1.5L多功能养生壶</h4>
+                                        <div class="figure-title ellipsis">定时预约 / 多段保温</div>
+                                        <p>￥109.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1160.html" title="">
+                                                <img src="./image/picture/6cd5def1252fa9cb6e6124e6e1f5d0be3b3b743f.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">2L多功能电饭煲</h4>
+                                        <div class="figure-title ellipsis">9大功能 / 感温探头</div>
+                                        <p>￥119.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1260.html" title="">
+                                                <img src="./image/picture/6e52a1e74e7fb4dec01d391d4b079c38e2baef6f.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">轻音轻薄破壁机</h4>
+                                        <div class="figure-title ellipsis">轻音轻薄 / 外观时尚</div>
+                                        <p>￥259.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1161.html" title="">
+                                                <img src="./image/picture/79ded5d6737cd88aee90e92ec3121169819e06e0.png">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">迷你家用电磁炉</h4>
+                                        <div class="figure-title ellipsis">极简面板 / 智能触控</div>
+                                        <p>￥169.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1"><a href="/list.html?cat_id=158">厨房电器</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-846.html" title="">
+                                                <img src="./image/picture/6c3c5b943796650948ad453811dacee67892aed8.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">无油烟空气炸锅</h4>
+                                        <div class="figure-title ellipsis">可视窗口 / 触摸面板</div>
+                                        <p>￥449.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1214.html" title="">
+                                                <img src="./image/picture/1de527772c2e9f615211ef6b8cd7b4c91f3ae298.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">包子鸭饭粒猫烤箱</h4>
+                                        <div class="figure-title ellipsis">广域调控 / 精准定时</div>
+                                        <p>￥129.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1273.html" title="">
+                                                <img src="./image/picture/9b20826543d9506e35f1eeec33a53be882f3ad35.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">多功能料理机</h4>
+                                        <div class="figure-title ellipsis">精准控温 / 一锅多用</div>
+                                        <p>￥1299.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1259.html" title="">
+                                                <img src="./image/picture/41b689e514798073a7ea4ce7e3b6c1af3c4e4a4c.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">手提式电磁炉</h4>
+                                        <div class="figure-title ellipsis">防水设计 / 多档火力</div>
+                                        <p>￥149.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1272.html" title="">
+                                                <img src="./image/picture/ecae9e0826d973d12712b55d3e6f362b6c850ece.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">空气炸锅</h4>
+                                        <div class="figure-title ellipsis">极简生活 / 轻享健康</div>
+                                        <p>￥299.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1291.html" title="">
+                                                <img src="./image/picture/62214f66d8593209d5ce3038c428bd35f7cff8f1.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">多功能电火锅</h4>
+                                        <div class="figure-title ellipsis">一机多用 / 多档调节</div>
+                                        <p>￥109.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1"><a href="/list.html?cat_id=53">智能周边</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/M1DPlus.html" title="">
+                                                <img src="./image/picture/c0eec73913599f09d1a3f8bba95a627ed2cf5cfc.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">M1D无线麦克风</h4>
+                                        <div class="figure-title ellipsis">双色双金 / 随心开唱</div>
+                                        <p>￥499.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/H4.html" title="">
+                                                <img src="./image/picture/5ede78a4635d4fdc7ddff4c3556a1cbaa8458cce.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">H4无线麦克风</h4>
+                                        <div class="figure-title ellipsis">智能降噪 / 高保真</div>
+                                        <p>￥499.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/L1.html" title="">
+                                                <img src="./image/picture/592824898135ea6ed4a8412b4fb0c6db91a4cad2.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">康佳便携投影L1</h4>
+                                        <div class="figure-title ellipsis">语音操控 / 双音响</div>
+                                        <p>￥1100.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1264.html" title="">
+                                                <img src="./image/picture/1a27308d34c3292f1c00209de8f001a9de1cae3b.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">康佳机顶盒</h4>
+                                        <div class="figure-title ellipsis">小巧轻便 / 画面清晰 </div>
+                                        <p>￥299.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/M1.html" title="">
+                                                <img src="./image/picture/b99a6b02665beabef3a9745a94a56edd810965d3.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">M1无线麦克风</h4>
+                                        <div class="figure-title ellipsis">奢华外观 / 歌房音效</div>
+                                        <p>￥269.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/H1.html" title="">
+                                                <img src="./image/picture/02cd65dbf3aee0524821c3a87d11bebe8184eb8c.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">智能网络微投</h4>
+                                        <div class="figure-title ellipsis">高清投影 / 时尚简约</div>
+                                        <p>￥1099.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1"><a href="/list.html?cat_id=14">K迷优品</a>
+                        <div class="item">
+                            <div class="item-children">
+                                <div class="container-fluid">
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1290.html" title="">
+                                                <img src="./image/picture/c371a4974723cd55f1106533092ef1b84880b061.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">毛绒公仔</h4>
+                                        <div class="figure-title ellipsis">牛来运转</div>
+                                        <p>￥108.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1289.html" title="">
+                                                <img src="./image/picture/d37107177577feddf9c602dbe66be7178aa75a9b.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">帆布包</h4>
+                                        <div class="figure-title ellipsis">众里寻TA</div>
+                                        <p>￥79.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1281.html" title="">
+                                                <img src="./image/picture/e70557266ab13f932aa071dc9c3d6cb6ce5abb0b.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">晴雨伞</h4>
+                                        <div class="figure-title ellipsis">花花视界 / 半边出租</div>
+                                        <p>￥99.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1275.html" title="">
+                                                <img src="./image/picture/fd961b3ccc150bca037523336209a12b9bdd8af0.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">U型枕</h4>
+                                        <div class="figure-title ellipsis">做个好梦</div>
+                                        <p>￥66.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1278.html" title="">
+                                                <img src="./image/picture/32234fee74b1de6abf122ffe4948baa0459d711f.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">笔记本</h4>
+                                        <div class="figure-title ellipsis"> 有本事</div>
+                                        <p>￥46.00</p>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="figure">
+                                            <a href="/item-1135.html" title="">
+                                                <img src="./image/picture/38ec137a1472a4569d84a92f306f5daba70adf4c.jpg">
+                                            </a>
+                                        </div>
+                                        <h4 class="text-uppercase ellipsis">盲盒 </h4>
+                                        <div class="figure-title ellipsis">动物梦境系列</div>
+                                        <p>￥71.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1"><a href="prucahse.html">大宗采购</a></div>
+                    <div class="col-xs-1"><a href="service.html">服务</a></div>
+                    <!--<div class="col-xs-1"><a href="http://bbs.konka.com" target="_blank">社区</a></div> -->
+                    <span class="spanLine"></span>
+                    <div class="col-xs-1 ">
+                        <a href="javascript:;" class="Magnifier iconImg">
+
+                            <img src="./image/picture/header-scrae.png">
+                        </a>
+                    </div>
+                    <!--<div class="col-xs-2 myCol">
+                    <div class="row">
+                        <div class="col-xs-12" id="dropdown">
+                            <span class="spanLine"></span>
+                               <a href="javascript:;" class="mylog col-xs-6 member-btn" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: none"></a>
+                                <a href="/passport-login.html" class="mylog col-xs-3 signin-btn" style="display: none;">登录</a>
+                                <a href="/passport-signup.html" class="mylog col-xs-3 signup-btn" style="display: none;">注册</a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li><a href="/my.html">个人中心</a></li>
+                                <li><a href="/my-orders.html">我的订单</a></li>
+                                <li><a href="/passport-logout.html">退出登录</a></li>
+                            </ul>
+                            <div class="col-xs-3 scaling">
+                                <a href="/cart.html" class="iconImg">
+                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                  <img src="./image/picture/header-shopping.png">
+                                  <span class="sp-num" style="display:none"></span>
+                                </a>
+                            </div>
+                            <div class="col-xs-3 "><a href="javascript:;" class="Magnifier iconImg">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
+                              <img src="./image/picture/header-scrae.png">
+                              </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>-->
+                </div>
+                <div class="row search">
+                    <form action="/list.html">
+                        <div class="search-wrapper">
+                            <button class="search-search">
+                            <!-- <span class="glyphicon glyphicon-search"></span> -->
+                            <img src="./image/picture/header-scrae.png">
+                        </button>
+                            <input type="text" name="keyword" class="inputSearch" placeholder="您喜欢的商品" autocomplete="off">
+                            <button class="search-close">
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                            <span class="glyphicon glyphicon-menu-left"></span>
+                        </button>
+                        </div>
+                        <aside class="search-content">
+                            <section class="search-con-frame">
+                                <ul id="animateUl">
+                                    <li><a href="javascript:;">电视</a></li>
+                                    <li><a href="javascript:;">冰箱</a></li>
+                                    <li><a href="javascript:;">洗衣机</a></li>
+                                    <li><a href="javascript:;">新飞</a></li>
+                                    <li><a href="javascript:;">KKTV</a></li>
+                                    <li><a href="javascript:;">A10</a></li>
+                                    <li><a href="javascript:;">养生壶</a></li>
+                                </ul>
+                            </section>
+                        </aside>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="back-top">
+        <ul>
+
+            <li class="kefu"><a href="javascript:void(0)" style="cursor:hand" target="_blank"><span class="glyphicon glyphicon-headphones glyphicon-kefu"></span>  <span class="backShow">购买咨询</span></a></li>
+            <li><a href="http://www.4008800016.com:84/MTalk/talk/visitor/dialog?config_id=1&come=KONKAGUANWANG"><span class="glyphicon glyphicon-wrench"></span> <span class="backShow">售后服务</span></a></li>
+            <li><a href="/cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="backShow">购物车</span></a></li>
+            <li id="the-top"><a href="javascript:;"><span class="glyphicon glyphicon-plane"></span> <span class="backShow">回到顶部</span></a></li>
+        </ul>
+    </div>
+    <!--<div style="position:absolute;top:-1000px;left:-1000px;">
+    <a href="http://www.365webcall.com/">在线客服 客服软件</a>
+</div>
+<script type='text/javascript' src='./image/js/imme1.js'></script>
+<div style="position:absolute;top:-1100px;left:-1100px;">
+    <a href="http://www.365webcall.com/">在线客服系统</a>
+</div>-->
+    <script type="text/javascript">
+        var _echatServer = ['v.rainbowred.com'];
+        window._echat = window._echat || function() {
+            (_echat.q = _echat.q || []).push(arguments)
+        };
+        _echat.l = +new Date;
+        _echat('initParam', {
+            companyId: 551
+        });
+        (function() {
+            var echat = document.createElement('script');
+            echat.type = 'text/javascript';
+            echat.async = true;
+            echat.id = 'echatmodulejs';
+            echat.setAttribute('charset', 'UTF-8');
+            echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js?vbe3b';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(echat, s);
+        })();
+        $(function() {
+            //客服
+            if ($('.product-container').length == 0 && $('.order-detail-container').length == 0) {
+                var member_id;
+                $.ajax({
+                    type: 'GET',
+                    url: '/#',
+                    async: false,
+                    success: function(res) {
+                        member_id = res.success
+                    }
+                })
+                $('.kefu').click(function() {
+                    var customObj = {}
+                    customObj.metaData = member_id
+                    ECHAT.customNewWinChat(customObj);
+                })
+            }
+            /**
+             * 登录\注册切换
+             */
+            if ($.cookie('UNAME') && $.cookie('MEMBER_IDENT')) {
+                $('.member-btn').show().text($.cookie('UNAME'));
+                $.post('/cart.html', function(re) {
+                    if (re.data) {
+                        //$('.sp-num').show();
+                        $('.sp-num').html(re.data.goods_count)
+                        $('.cart-num').html(re.data.goods_count)
+                    }
+                })
+            } else {
+                $('.signin-btn').show();
+                $('.signup-btn').show();
+            }
+            //个人中心下拉菜单
+            $('.dropdown-toggle').dropdown();
+            /*
+             *导航切换显示
+             */
+            $('#nav-top .col-xs-1').mousemove(function() {
+                $(this).find('.item').addClass('item-show');
+            });
+            $('#nav-top .col-xs-1').mouseout(function() {
+                $('#nav-top .col-xs-1').find('.item').removeClass('item-show');
+            });
+            /*
+             *侧边栏hover效果
+             */
+            var backIndex = $('.back-top li');
+            backIndex.mousemove(function() {
+                $(this).find(".glyphicon").hide();
+                $(this).find(".backShow").show();
+            });
+            backIndex.mouseout(function() {
+                $(this).find(".glyphicon").show();
+                $(this).find(".backShow").hide();
+            });
+            /*
+             *回到顶部
+             */
+            $('#the-top').hide();
+            //网页首屏高度
+            var frist = $(window).height();
+            $(window).scroll(function() {
+                //第一屏不显示按钮
+                if ($(window).scrollTop() > frist) {
+                    $('#the-top').fadeIn()
+                } else {
+                    $('#the-top').fadeOut();
+                }
+            });
+            $('#the-top').on('click', function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+            /*
+             *顶部导航固定
+             */
+            //获取导航距离顶部的位置
+            var navTop = $('#nav-top').offset().top;
+            $(window).scroll(function() {
+                //滚动条的滚动距离
+                var scrTop = $(window).scrollTop();
+                if (scrTop >= navTop) {
+                    $('#nav-top').addClass('site-header-fixed')
+                } else {
+                    $('#nav-top').removeClass('site-header-fixed')
+                }
+
+            });
+            /*
+             *搜索框
+             */
+            $('.site-header .Magnifier').on('click', function(event) {
+                event.stopPropagation();
+                $('.site-header .col-xs-1,.myCol').fadeOut(600);
+                $('.search').fadeIn(600).find("ul").addClass("mymove");
+            });
+            //X关闭
+            $('.search-close').on('click', function() {
+                searchShow();
+                return false;
+            });
+            //阻止文本框的冒泡
+            $('.inputSearch').on('click', function(event) {
+                    event.stopPropagation();
+                })
+                //任意元素关闭
+            $(document).on('click', function(event) {
+                searchShow();
+            });
+
+            function searchShow() {
+                $('.search').fadeOut(300);
+                $('.site-header .col-xs-1,.myCol').fadeIn(1000);
+            };
+            //获取文本框搜索文字
+            function mySearch() {
+                var keyword = $('input[name="keyword"]').val();
+                var href = $(this).closest('form').attr('action');
+                href += (href.indexOf('?') > -1 ? '&' : '?') + 'keyword=' + keyword;
+                location.href = href;
+            }
+            //文本框回车事件
+            $('.inputSearch').keyup(function(e) {
+                if (e.keyCode == 13) {
+                    mySearch();
+                }
+            });
+            //搜索按钮事件
+            $('.search-search').on('click', function() {
+                mySearch();
+            });
+            //搜索栏默认地址跳转
+            $('#animateUl li').click(function() {
+                var keyword = $(this).text();
+                var href = $(this).closest('form').attr('action');
+                href += (href.indexOf('?') > -1 ? '&' : '?') + 'keyword=' + keyword;
+                location.href = href;
+            });
+            //删除广告
+            $('.remove-advertising').on('click', function() {
+                $(this).parents('.site-advertising-item').remove();
+                navTop = $('#nav-top').offset().top;
+            })
+            if ($('.remove-advertising').length > 0) {
+                $('.remove-advertising').each(function(index, el) {
+                    console.log(index, el);
+                    var key = $(el).attr('data-key');
+                    if ($.cookie(key)) {
+                        $(el).parents('.site-advertising-item').remove()
+                    }
+                })
+            }
+
+        })
+    </script>
+    <div class="container main-container">
+        <div class="jumbotron" style="overflow:hidden;">
+            <div class="ju-left pull-left">
+                <image src="https://www.konka.com/themes/pc/konka/images/shoppingNone.png?ve98f"></image>
+            </div>
+            <div class="ju-right pull-left" style="margin:15px 0 0 15px;">
+                <h3 style="font-weight:600;">您的购物车还是空的！</h3>
+                <p>您的购物车当前并未选购任何商品。</p>
+                <p><a class="btn btn-danger btn-lg shoppingRed" href="/list.html" role="button">马上去购物 »</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer">
+                <ul class="list-service">
+                    <li>
+                        <div class="foo-con">
+                            <img src="./image/picture/508be9abdf01173241a65b671c4ec6fff242e359.png">
+                        </div>
+                        <div class="foo-title">
+                            <h4>全场包邮</h4>
+                            <small>全场商品免费送到家</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="foo-con">
+                            <img src="./image/picture/dda3bbcea1734e9cc57f733bd39c7bdfa8a098c9.png">
+                        </div>
+                        <div class="foo-title">
+                            <h4>质量保证</h4>
+                            <small>享受国家三包政策</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="foo-con">
+                            <img src="./image/picture/fa606e57f51c1c20bee1b08b460b546a2308535a.png">
+                        </div>
+                        <div class="foo-title">
+                            <h4>权益保障</h4>
+                            <small>7天包退15天包换</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="foo-con">
+                            <img src="./image/picture/e7f1acfff43fd63737b75f9dd040c04875dbef80.png">
+                        </div>
+                        <div class="foo-title">
+                            <h4>放心服务</h4>
+                            <small>24小时内上门服务</small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="foo-con">
+                            <img src="./image/picture/2304a231ed8691bc454c367e282052810d5634d0.png">
+                        </div>
+                        <div class="foo-title">
+                            <h4>意外惊喜</h4>
+                            <small>限时打折优惠不断</small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="n-31-alist.html" target="_blank">购买指南</a></dd>
+                    <dd><a href="n-32-alist.html" target="_blank">支付方式</a></dd>
+                    <dd><a href="n-33-alist.html" target="_blank">配送方式</a></dd>
+                    <dd><a href="n-34-alist.html" target="_blank">售后政策</a></dd>
+                    <dd><a href="http://www.konkasmart.com/Service/show_article_noh5fwcx/cate/web_fwcx.html" target="_blank">防伪查询</a></dd>
+                    <!--<dd><a href="http://shop.konka.com/member-orders.html" target="_blank">旧版官网</a></dd> -->
+                </dl>
+                <dl>
+                    <dt>新闻中心</dt>
+                    <dd><a href="news.html" target="_blank">集团新闻</a></dd>
+                    <dd><a href="n-5-alist.html" target="_blank">媒体报道</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>投资者关系</dt>
+                    <dd><a href="/n-26-alist.html" target="_blank">公司概要</a></dd>
+                    <dd><a href="/n-27-alist.html" target="_blank">高管团队</a></dd>
+
+                    <dd><a href="http://webapi.cninfo.com.cn/notice.html?id=657&api=p_sysapi1091&stype=1&scode=000016&column=SECNAME,F002V,F001D,SORTNAME&sortcode=0103,0105,0107,0109,0110,0111,0113,0115,0117,0119,0120,0121,0123,0125,0127" target="_blank">最新公告</a></dd>
+                    <dd><a href="/n-36-alist.html" target="_blank">公司治理</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>集团成员网站</dt>
+                    <dd><a href="http://www.chinaoct.com/" target="_blank">华侨城集团</a></dd>
+                    <dd><a href="http://www.4008800016.com/index" target="_blank">康佳全球服务中心</a></dd>
+                    <dd><a href="http://www.konka.com.hk/" target="_blank">康佳国际营销</a></dd>
+                    <dd><a href="http://www.konkamobile.com/" target="_blank">康佳移动互联科技</a></dd>
+                    <dd><a href="http://www.konkaled.cn/" target="_blank">康佳壹视界商业显示</a></dd>
+                    <dd><a href="http://www.konkasmart.com/" target="_blank">康佳智能电器</a></dd>
+
+
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="/about.html" target="_blank">了解康佳</a></dd>
+                    <dd><a href="http://konka.hotjob.cn/wt/konka/web/index/webPositionN300!getPositionListByCorpAndWebColumnShowPic?postIdEnc=&brandCode=1&recruitType=2&lanType=1&columnId=2" target="_blank">加入康佳</a></dd>
+                    <dd><a href="http://campus.51job.com/konka/flash.html" target="_blank">校园招聘</a></dd>
+                    <dd><a href="contact.html" target="_blank">联系我们</a></dd>
+                    <!--<dd><a href="http://kxm.konka.com/passport.html" target="_blank">员工内购</a></dd>-->
+                </dl>
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="https://weibo.com/konka?topnav=1&wvr=6&topsug=1&is_all=1" target="_blank">官方微博</a></dd>
+                    <dd class="showCode"><a href="#">官方微信</a>
+                        <div class="code">
+                            <img src="./image/picture/ewm.jpg" alt="">
+                        </div>
+                    </dd>
+
+                    <dd><a href="http://bbs.konka.com" target="_blank">官方社区</a></dd>
+                    <dd class="showCode"><a href="#">K迷俱乐部</a>
+                        <div class="code">
+                            <img src="./image/picture/km.jpg" alt="">
+                        </div>
+                    </dd>
+                    <dd class="showCode"><a href="#">康佳微商城</a>
+                        <div class="code">
+                            <img src="./image/picture/wsc.jpg" alt="">
+                        </div>
+                    </dd>
+                    <dd class="showCode"><a href="#">康佳服务</a>
+                        <div class="code">
+                            <img src="./image/picture/kafu.jpg" alt="">
+                        </div>
+                    </dd>
+                    <dd><a href="http://tv.qq.com/" target="_blank">腾讯视频TV端</a></dd>
+
+                    <!-- <dd class="showCode">
+					<a href="#">康佳汇</a>
+					<div class="code">
+						<img src="./image/picture/xz.jpg" alt="">
+					</div>
+				</dd>-->
+                </dl>
+                <!-- onclick="javascript:window.open('http://vs.rainbowred.com/visitor/pc/chat.html?companyId=551&id=12345','','width=900,height=660')" 
+			http://www.4008800016.com:84/MTalk/talk/visitor/dialog?config_id=1&come=KONKAGUANWANG-->
+                <div class="links-iphone">
+                    <p class="hotline">24小时全国服务热线</p>
+                    <p class="tele">400-880-0016</p>
+                    <a href="javascript:void(0)" target="_blank" class="Customer zixun">
+                        <span class="glyphicon glyphicon-headphones">购买咨询</span>
+                    </a>
+
+                    <a style="margin-left: 10px;" target="_blank" href="http://www.4008800016.com:84/MTalk/talk/visitor/dialog?config_id=1&come=KONKAGUANWANG" class="Customer">
+                        <span class="glyphicon glyphicon-user">售后服务</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="for-footer" style="padding:0 100px">
+        <div class="for-logo">
+            <img src="./image/picture/konka.png" alt="">
+        </div>
+        <div class="for-link">
+            <p>Copyright © 1980-2021 康佳集团股份有限公司 版权所有</p>
+            <span>|</span><a href="/p-15.html">联系我们</a>
+            <span>|</span><a href="/p-13.html">法律声明</a>
+            <span>|</span><a href="/p-14.html">隐私保护</a>
+            <span>|</span><a href="https://m.kuaidi100.com/">快递查询</a>
+            <span>|</span><a href="http://tv.qq.com/">腾讯视频TV端</a>
+            <span>|</span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备 05059413号</a>
+        </div>
+    </div>
+    <div class="for-theme">
+        <a href="https://credit.szfw.org/CX20160830025087000485.html" target="_blank"><img src="./image/picture/cert3.png" alt=""></a>
+        <a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.konka.com&at=official" target="_blank"><img src="./image/picture/cert2.png" alt=""></a>
+        <a href="https://szcert.ebs.org.cn/1db11754-da73-4970-aa65-a587139e866e" target="_blank"><img src="./image/picture/cert.gif" alt=""></a>
+    </div>
+    <script>
+        $(function() {
+            if ($('.product-container').length == 0 && $('.order-detail-container').length == 0) {
+                var member_id;
+                $.ajax({
+                    type: 'GET',
+                    url: '/#',
+                    async: false,
+                    success: function(res) {
+                        member_id = res.success
+                    }
+                })
+                $('.zixun').click(function() {
+                    var customObj = {}
+                    customObj.metaData = member_id
+                    ECHAT.customNewWinChat(customObj);
+                })
+            }
+        })
+        $('.showCode').hover(function() {
+            $(this).find('.code').toggle()
+        })
+    </script>
+    <!--<script>
+var Customer = document.getElementById("Customer");
+//新建一个对象
+Customer.onclick = function(){
+// url="https://vs.rainbowred.com/visitor/pc/chat.html?companyId=59&metaData="+member_id; 
+url="https://vs.rainbowred.com/visitor/pc/chat.html?companyId=551&echatTag=test&metaData="+member_id; //测试地址
+window.open(url,"Echatbox","toolbar=0,scrollbars=0,location=0,menubar=0,resizable=1,width=900,height=600");
+};
+</script>
+-->
+
+    <!--site footer common-->
+    <script charset="utf-8">
+        /*购物数量 事件拦截开始*/
+
+        $(function() {
+            var change_event_timer = 0;
+            var _change_quantity = function(ipt, num) {
+                ipt = $(ipt), last_val = parseInt(ipt.val());
+                var set_v = last_val + num;
+                ipt.val(set_v);
+                if (isNaN(ipt.val()) || ipt.val() < 1) {
+                    if (!isNaN(ipt.attr('data-min'))) {
+                        ipt.val(ipt.attr('data-min'));
+                    } else {
+                        ipt.val('1');
+                    }
+                }
+                if (ipt.attr('data-max') && set_v > parseInt(ipt.attr('data-max'))) {
+                    ipt.val(ipt.attr('data-max'));
+                }
+                if (ipt.attr('data-min') && set_v < parseInt(ipt.attr('data-min'))) {
+                    ipt.val(ipt.attr('data-min'));
+                }
+                if (set_v === parseInt($(ipt).attr('data-now'))) return;
+                $(ipt).attr('data-now', set_v);
+                ipt.trigger('_change', [ipt.val(), num]);
+            }
+
+            $(document).on('click', '.product-quantity .spinner-buttons', function(e) {
+                var btn = $(this);
+                btn.find('button').eq(0).blur();
+                if (btn.data('animating')) return;
+                if (btn.next('.spinner-input').length) {
+                    _change_quantity(btn.next('.spinner-input'), -1);
+                }
+                if (btn.prev('.spinner-input').length) {
+                    _change_quantity(btn.prev('.spinner-input'), +1);
+                }
+                btn.data('animating', true);
+                btn.css('opacity', .2);
+                btn.animate({
+                    opacity: 1
+                }, 'slow', function() {
+                    $(this).removeData('animating');
+                });
+
+
+            });
+            $(document).on('keyup', '.product-quantity .spinner-input', function(e) {
+                switch (e.keyCode) {
+                    case 38:
+                        _change_quantity(this, +1);
+                        break;
+                    case 40:
+                        _change_quantity(this, -1);
+                        break;
+                    default:
+                        _change_quantity(this, 0);
+                }
+            });
+        });
+
+        /*购物数量 事件拦截结束*/
+    </script>
+    <div style='display:none' data-rel='Baidu Analytics'>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?dc58ecf8efbaa47680374be5c54548af";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </div>
+    <div class="vmcocean-tracker hide hidden" style="display:none;">
+        <script>
+            /**
+             * VMC Ocean Tracker
+             * @event_name ViewPage
+             * @tracker render at 2021-02-21 16:59:32
+             */
+        </script>
+        <img src="./image/picture/18f7c34fda9e4bc79d28b28b1741b0fb.gif" alt="VMC Ocean Tracker" />
+    </div>
+    <script type='text/javascript'>
+        rtgsettings = {
+
+            'pdt_id': '$item.good_id',
+            'pdt_sku': '$pdt_sku$',
+            'pdt_category_list': '$pdt_category_list$',
+            'pdt_url': '$pdt_url$',
+            'ty_orderamt': '$ty_orderamt$',
+            'ty_orderdate': '$ty_orderdate$',
+            'ty_orderstatus': '$ty_orderstatus$',
+            'pagetype': 'basket',
+            'key': 'DIR',
+            'token': 'KONKA_CN',
+            'layer': 'iframe'
+        };
+        (function(d) {
+            var s = d.createElement('script');
+            s.async = true;
+            s.id = 'madv2014rtg';
+            s.type = 'text/javascript';
+            s.src = (d.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.mainadv.com/Visibility/Rtgdir2-min.js?ve98f';
+            var a = d.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(s, a);
+        }(document));
+    </script>
+
+</body>
+
+</html>
