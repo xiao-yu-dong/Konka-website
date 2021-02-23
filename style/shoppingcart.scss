@@ -28,7 +28,6 @@
 
 .head input {
     float: left;
-    margin-top: 15px;
 }
 
 .head span:nth-of-type(1) {
@@ -48,21 +47,27 @@
 
 .head span:nth-of-type(4) {
     float: left;
-    margin-left: 90px;
+    margin-left: 75px;
 }
 
 .head span:nth-of-type(5) {
     float: left;
-    margin-left: 120px;
+    margin-left: 105px;
+}
+
+.head span:nth-of-type(6) {
+    float: left;
+    margin-left: 95px;
 }
 
 .list {
     margin-top: 5px;
-    width: 1130px;
-    // margin: 0 auto;
+    width: 1200px;
+    padding-left: 0;
 }
 
 .list li {
+    width: 1130px;
     padding: 10px 15px;
     background-color: lightcyan;
     overflow: hidden;
@@ -97,13 +102,65 @@
     float: left;
     width: 20px;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .list li em {
     float: left;
     width: 50px;
     text-align: center;
-    margin-left: 120px;
+    margin-left: 125px;
     cursor: pointer;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.J_jian {
+    width: 28px;
+    // height: 28px;
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.J_jian:hover {
+    background-color: red;
+}
+
+.J_jia {
+    width: 28px;
+    // height: 28px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.J_jia:hover {
+    background-color: red;
+}
+
+.num {
+    width: 60px;
+}
+
+.head .allCheck {
+    width: 20px;
+    height: 20px;
+    margin: 10px 15px 0 0;
+}
+
+li .checks {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px 0 38px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.price2 {
+    font-size: 18px;
 }
