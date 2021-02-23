@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style/theme.css">
     <link rel="stylesheet" href="./style/public.css">
     <link rel="stylesheet" href="./style/cart.css">
-    <link rel="stylesheet" href="./style/carterer.css">
+    <!-- <link rel="stylesheet" href="./style/carterer.css"> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -601,34 +601,7 @@
                             <img src="./image/picture/header-scrae.png">
                         </a>
                     </div>
-                    <!--<div class="col-xs-2 myCol">
-                    <div class="row">
-                        <div class="col-xs-12" id="dropdown">
-                            <span class="spanLine"></span>
-                               <a href="javascript:;" class="mylog col-xs-6 member-btn" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: none"></a>
-                                <a href="/passport-login.html" class="mylog col-xs-3 signin-btn" style="display: none;">登录</a>
-                                <a href="/passport-signup.html" class="mylog col-xs-3 signup-btn" style="display: none;">注册</a>
-                            <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="/my.html">个人中心</a></li>
-                                <li><a href="/my-orders.html">我的订单</a></li>
-                                <li><a href="/passport-logout.html">退出登录</a></li>
-                            </ul>
-                            <div class="col-xs-3 scaling">
-                                <a href="/cart.html" class="iconImg">
-                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                  <img src="./image/picture/header-shopping.png">
-                                  <span class="sp-num" style="display:none"></span>
-                                </a>
-                            </div>
-                            <div class="col-xs-3 "><a href="javascript:;" class="Magnifier iconImg">
-                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
-                              <img src="./image/picture/header-scrae.png">
-                              </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>-->
+
                 </div>
                 <div class="row search">
                     <form action="/list.html">
@@ -672,13 +645,7 @@
             <li id="the-top"><a href="javascript:;"><span class="glyphicon glyphicon-plane"></span> <span class="backShow">回到顶部</span></a></li>
         </ul>
     </div>
-    <!--<div style="position:absolute;top:-1000px;left:-1000px;">
-    <a href="http://www.365webcall.com/">在线客服 客服软件</a>
-</div>
-<script type='text/javascript' src='./image/js/imme1.js'></script>
-<div style="position:absolute;top:-1100px;left:-1100px;">
-    <a href="http://www.365webcall.com/">在线客服系统</a>
-</div>-->
+
     <script type="text/javascript">
         var _echatServer = ['v.rainbowred.com'];
         window._echat = window._echat || function() {
@@ -699,23 +666,7 @@
             s.parentNode.insertBefore(echat, s);
         })();
         $(function() {
-            //客服
-            if ($('.product-container').length == 0 && $('.order-detail-container').length == 0) {
-                var member_id;
-                $.ajax({
-                    type: 'GET',
-                    url: '/#',
-                    async: false,
-                    success: function(res) {
-                        member_id = res.success
-                    }
-                })
-                $('.kefu').click(function() {
-                    var customObj = {}
-                    customObj.metaData = member_id
-                    ECHAT.customNewWinChat(customObj);
-                })
-            }
+
             /**
              * 登录\注册切换
              */
@@ -732,8 +683,6 @@
                 $('.signin-btn').show();
                 $('.signup-btn').show();
             }
-            //个人中心下拉菜单
-            $('.dropdown-toggle').dropdown();
             /*
              *导航切换显示
              */
@@ -858,16 +807,45 @@
         })
     </script>
     <div class="container main-container">
-        <div class="jumbotron" style="overflow:hidden;">
-            <div class="ju-left pull-left">
-                <image src="https://www.konka.com/themes/pc/konka/images/shoppingNone.png?ve98f"></image>
+        <!-- *********************************8 -->
+        <link rel="stylesheet" href="./style/shoppingcart.css">
+        <div class="wrap">
+            <div class="header">
+                <h1>我的购物车</h1>
             </div>
-            <div class="ju-right pull-left" style="margin:15px 0 0 15px;">
-                <h3 style="font-weight:600;">您的购物车还是空的！</h3>
-                <p>您的购物车当前并未选购任何商品。</p>
-                <p><a class="btn btn-danger btn-lg shoppingRed" href="/list.html" role="button">马上去购物 »</a></p>
+            <div class="head">
+                <span><input class="allCheck" type="checkbox">全选</span>
+                <span>商品信息</span>
+                <span>单价</span>
+                <span>数量</span>
+                <span>小计</span>
+                <span>操作</span>
+
             </div>
+            <ul class="list">
+                <!-- <li>
+                <input type="checkbox">
+                <img src="https://img11.360buyimg.com/n7/jfs/t1/170810/11/3359/266408/600677efE384c620f/098693b4710d823d.jpg" alt="">
+                <h3>Satchi沙驰女鞋新款格子布尖头拼接单鞋 细跟高跟鞋女E237729A 蓝/黑E237730A 36</h3>
+                <p>168.88</p>
+                <span>2</span>
+                <em>删除</em>
+              </li>
+              <li>
+                <input type="checkbox">
+                <img src="https://img11.360buyimg.com/n7/jfs/t1/170810/11/3359/266408/600677efE384c620f/098693b4710d823d.jpg" alt="">
+                <h3>Satchi沙驰女鞋新款格子布尖头拼接单鞋 细跟高跟鞋女E237729A 蓝/黑E237730A 36</h3>
+                <p>168.88</p>
+                <span>2</span>
+                <em>删除</em>
+              </li> -->
+            </ul>
+
         </div>
+
+        <p>总价：<label id="total"></label></p>
+        <script src="./script/shoppingcart.js"></script>
+        <!-- ********************************8 -->
     </div>
     <div class="site-footer">
         <div class="container">

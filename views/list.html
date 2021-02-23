@@ -913,7 +913,7 @@
         <link rel="stylesheet" href="./style/goodsList.css">
         <div class="header">
             <h1>商品列表</h1>
-            <a href="./shoppingcart.html">我的购物车</a>
+            <a href="./cart.html">我的购物车</a>
         </div>
         <div class="wrap">
             <div class="main">
@@ -927,29 +927,7 @@
         </div>
         <script src="./script/goodsList.js"></script>
         <script src="./script/utils.js"></script>
-        <script>
-            var imgs = document.querySelectorAll('.goods img')
 
-            function loadImg() {
-                var scrollT = document.documentElement.scrollTop
-                var windowHeight = document.documentElement.clientHeight
-                    // 判断哪些图片进入可视区
-                for (var i = 0, len = imgs.length; i < len; i++) {
-                    if (offset(imgs[i]).top <= (scrollT + windowHeight)) {
-                        // 当前图片进入可视区
-                        imgs[i].src = imgs[i].getAttribute('_src')
-                    }
-                }
-            }
-
-            // 进入页面需要判断加载哪些图片
-            loadImg()
-
-            // 滚动条滚动时也要判断哪些图片需要加载
-            window.onscroll = function() {
-                loadImg()
-            }
-        </script>
         <!-- ***********************************8 -->
 
     </div>

@@ -6,21 +6,47 @@ $(function() {
         type: 'get',
         dataType: 'json',
         cache: false,
+        // 数据渲染
         success: function(json) {
             var domStr = ''
             $.each(json, function(index, item) {
                 domStr += `
-        <div class="goods">
-          <img src="${item.imgurl}" class="layz" alt="">
-          <p>${item.price}</p>
-          <h3>${item.title}</h3>
-          <div data-id="${item.id}">加入购物车</div>
-        </div>
-        `
+                <div class="goods">
+                <a href="./item-1135.html"><img _src="${item.imgurl}" src="" class="layz" alt=""></a>
+                <p>${item.price}</p>
+                <h3>${item.title}</h3>
+                <div data-id="${item.id}">加入购物车</div>
+                <div><a href="./cart.html">立即购买</a></div>
+                </div>
+                `
             })
             $('.main').html(domStr)
+
+            // 懒加载
+            var imgs = document.querySelectorAll('.goods img')
+
+            function loadImg() {
+                var scrollT = document.documentElement.scrollTop
+                var windowHeight = document.documentElement.clientHeight
+                    // 判断哪些图片进入可视区
+                for (var i = 0, len = imgs.length; i < len; i++) {
+
+                    if (offset(imgs[i]).top <= (scrollT + windowHeight)) {
+                        imgs[i].src = imgs[i].getAttribute('_src')
+                    }
+                }
+            }
+            // 进入页面需要判断加载哪些图片
+            loadImg()
+
+            // 滚动条滚动时也要判断哪些图片需要加载
+            window.onscroll = function() {
+                loadImg()
+            }
         }
     })
+
+
 
     // 点击加入购物车
     $('.main').on('click', '.goods div', function() {
