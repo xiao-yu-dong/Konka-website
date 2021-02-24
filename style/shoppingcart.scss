@@ -115,6 +115,12 @@
     font-size: 18px;
 }
 
+.list li em:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+
 .J_jian {
     width: 28px;
     // height: 28px;

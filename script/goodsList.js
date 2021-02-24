@@ -15,8 +15,8 @@ $(function() {
                 <a href="./item-1135.html"><img _src="${item.imgurl}" src="" class="layz" alt=""></a>
                 <p>${item.price}</p>
                 <h3>${item.title}</h3>
-                <div data-id="${item.id}">加入购物车</div>
-                <div><a href="./cart.html">立即购买</a></div>
+                <div class="gouwuche" data-id="${item.id}">加入购物车</div>
+                <div ><a href="./cart.html">立即购买</a></div>
                 </div>
                 `
             })
